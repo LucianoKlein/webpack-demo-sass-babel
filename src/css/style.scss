@@ -1,0 +1,13 @@
+@mixin square($length: 20px){
+    width: $length;
+    height: $length;
+}
+@mixin bg($color: black) {
+    background-color: $color;
+}
+body {
+    p.love {
+        @include square(100px);
+        @include bg(red);
+    }
+}
